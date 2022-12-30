@@ -1,0 +1,392 @@
+/* josefin-sans-regular - latin */
+@font-face {
+    font-family: 'Josefin Sans';
+    font-style: normal;
+    font-weight: 400;
+    src: local(''),
+        url('../fonts/josefin-sans-v25-latin-regular.woff2') format('woff2'),
+        /* Chrome 26+, Opera 23+, Firefox 39+ */
+        url('../fonts/josefin-sans-v25-latin-regular.woff') format('woff');
+    /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+/* josefin-sans-700 - latin */
+@font-face {
+    font-family: 'Josefin Sans';
+    font-style: normal;
+    font-weight: 700;
+    src: local(''),
+        url('../fonts/josefin-sans-v25-latin-700.woff2') format('woff2'),
+        /* Chrome 26+, Opera 23+, Firefox 39+ */
+        url('../fonts/josefin-sans-v25-latin-700.woff') format('woff');
+    /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+/* cedarville-cursive-regular - latin */
+@font-face {
+    font-family: 'Cedarville Cursive';
+    font-style: normal;
+    font-weight: 400;
+    src: local(''),
+        url('../fonts/cedarville-cursive-v17-latin-regular.woff2') format('woff2'),
+        /* Chrome 26+, Opera 23+, Firefox 39+ */
+        url('../fonts/cedarville-cursive-v17-latin-regular.woff') format('woff');
+    /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+/* alegreya-sans-regular - latin */
+@font-face {
+    font-family: 'Alegreya Sans';
+    font-style: normal;
+    font-weight: 400;
+    src: local(''),
+        url('../fonts/alegreya-sans-v24-latin-regular.woff2') format('woff2'),
+        /* Chrome 26+, Opera 23+, Firefox 39+ */
+        url('../fonts/alegreya-sans-v24-latin-regular.woff') format('woff');
+    /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+.wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/*Header styles начало*/
+.header_wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 36px;
+}
+
+.nav {
+    display: flex;
+}
+
+.header_list {
+    display: flex;
+    flex-wrap: wrap;
+    list-style-type: none;
+    align-items: center;
+    padding-right: 57px;
+}
+
+.header_item {
+    margin-right: 82px;
+}
+
+.header_item:last-child {
+    margin-right: 0;
+}
+
+.header_link {
+    text-decoration: none;
+    font-family: 'Josefin Sans', sans-serif;
+    ;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 16px;
+    color: #000000;
+}
+
+.header_link:hover,
+.header_link:focus,
+.header_link:active {
+    opacity: 0.75;
+}
+
+.header_button {
+    background: #2D635E;
+    color: #FFFFFF;
+    mix-blend-mode: normal;
+    box-shadow: 0px 7px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 7px;
+    width: 135px;
+    height: 43px;
+    font-family: 'Josefin Sans', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+/*Header styles конец*/
+
+/*Кофемолка styles начало*/
+
+.main_wrapper {
+    padding-top: 50px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.name {
+    align-self: center;
+}
+
+.slogan {
+    color: #444A4A;
+    margin-bottom: 26px;
+}
+
+.title {
+    font-family: 'Josefin Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 63px;
+    line-height: 63px;
+    color: #000000;
+    margin-bottom: 26px;
+}
+
+.main_button {
+    width: 235px;
+    height: 54px;
+    background: #2D635E;
+    border-radius: 5px;
+    color: #FFFFFF;
+    font-family: 'Josefin Sans', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 25px;
+    border: none;
+}
+
+.main_right {
+    display: flex;
+}
+
+.cursor {
+    align-self: flex-end;
+    width: 159px;
+    height: 157px;
+    background: #E3EBE7;
+    opacity: 0.4;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);
+    text-align: center;
+}
+
+.cursor a {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.coffe_grinder {
+    position: relative;
+}
+
+.grey {
+    background: #E3EBE7;
+    min-width: 410px;
+    min-height: 466px;
+}
+
+.coffe_grinder img {
+    position: absolute;
+    top: 140px;
+    left: 39px;
+}
+
+.contacts {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.contacts h3 {
+    transform: rotate(-90deg);
+    font-family: 'Josefin Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 28px;
+    color: #444A4A;
+}
+
+/*Кофемолка styles конец*/
+
+/*Описание styles начало*/
+
+.info {
+    margin-top: 197px;
+}
+
+.about_us {
+    display: flex;
+}
+
+.cup {
+    position: relative;
+    margin-right: 103px;
+
+}
+
+.cup h4 {
+    position: absolute;
+    opacity: 0.75;
+    transform: rotate(-90deg);
+}
+
+.pink {
+    min-width: 380px;
+    min-height: 287px;
+    background: #FAE9E0;
+}
+
+.cup img {
+    position: absolute;
+    top: 78px;
+    left: 28px;
+}
+
+.about_shop {
+    max-width: 645px;
+}
+
+.about_shop h2,
+.promotion h2 {
+    margin-bottom: 25px;
+}
+
+.about_shop p {
+    margin-bottom: 15px;
+}
+
+.promotion {
+    margin-top: 163px;
+    display: flex;
+}
+
+.promotion_text {
+    max-width: 615px;
+}
+
+.promotion_text button {
+    margin-top: 24px;
+}
+
+.paper_cup {
+    position: relative;
+    margin-left: 103px;
+}
+
+.paper_cup h4 {
+    position: absolute;
+    opacity: 0.75;
+    transform: rotate(-90deg);
+    left: 375px;
+}
+
+.paper_cup .grey {
+    min-width: 410px;
+    min-height: 276px;
+}
+
+.paper_cup img {
+    position: absolute;
+    left: 72px;
+}
+
+/*Описание styles конец*/
+
+/*Карточки styles начало*/
+
+.cards {
+    background-color: #E3EBE7;
+    height: 550px;
+    margin-top: 64px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cards_wrapper {
+    width: 1084px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.card {
+    background: #FFFFFF;
+    box-shadow: 0px 23px 34px rgba(35, 57, 55, 0.17);
+    border-radius: 25px;
+    width: 340px;
+    height: 458px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    font-family: 'Josefin Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 28px;
+}
+
+.card h3 {
+    padding-top: 45px;
+    font-family: 'Josefin Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 28px;
+}
+
+.card p {
+    padding-top: 25px;
+    max-width: 224px;
+    padding-bottom: 43px;
+}
+
+/*Карточки styles конец*/
+
+/*Footer styles начало*/
+
+.footer_wrapper {
+    padding-top: 131px;
+    padding-bottom: 153px;
+    display: flex;
+    justify-content: center;
+}
+
+.map {
+    padding-right: 176px;
+}
+
+
+
+.address h3 {
+    font-family: 'Josefin Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 45px;
+    padding-bottom: 21px;
+}
+
+.address p {
+    padding-bottom: 16px;
+}
+
+.bandtitos {
+    text-align: center;
+}
+
+/*Footer styles конец*/
